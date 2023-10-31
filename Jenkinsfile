@@ -13,7 +13,7 @@ pipeline {
         scannerHome = tool 'sonarqube'
       }
         steps {
-            withSonarQubeEnv('sq-ana-2') {        
+            withSonarQubeEnv('sonar-qube-ana-1') {        
               sh "${scannerHome}/bin/sonar-scanner"
             }   
         }
